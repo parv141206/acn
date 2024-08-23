@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/globals.css" />
+  </head>
+  <body class="flex center flex-col">
+    <%- include('navbar') %>
+    <div id="main-body">
+      <form id="ip-input-form">
+        <div class="flex flex-col">
+          <!-- <div id="ip-validation-message"></div> -->
+          <label class="label" for="ip">IP</label>
+          <input
+            id="ip-input"
+            type="text"
+            class="input"
+            placeholder="IP address"
+            spellcheck="false"
+            name="ip"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="label" for="cidr">CIDR</label>
+          <input
+            id="cidr-input"
+            type="number"
+            class="input"
+            placeholder="Slash notation"
+            spellcheck="false"
+            name="cidr"
+          />
+        </div>
+        <button type="submit" class="button">Submit</button>
+      </form>
+      <div class="card hidden" id="card"></div>
+      <div class="rounded">
+        <table id="subnet-table" class="styled-table hidden"></table>
+      </div>
+    </div>
+    <script type="module" src="/lib/home.js"></script>
+  </body>
+</html>

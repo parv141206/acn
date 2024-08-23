@@ -1,0 +1,13 @@
+.navbar {
+  width: 80vw;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.288);
+  backdrop-filter: blur(10px);
+  border: rgb(155, 155, 155) 1px solid;
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background-color: lightblue !important;
+  }
+}

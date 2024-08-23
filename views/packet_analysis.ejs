@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/globals.css" />
+  </head>
+  <body>
+    <%- include('navbar') %>
+    <div id="main-body">
+      <form id="packet-header-input-form">
+        <div class="flex flex-col">
+          <label class="label" for="header">Header</label>
+          <input
+            id="header-input"
+            type="text"
+            class="input"
+            placeholder="IP address"
+            spellcheck="false"
+            name="header"
+          />
+        </div>
+
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+    <script type="module" src="/lib/packet.js"></script>
+  </body>
+</html>
