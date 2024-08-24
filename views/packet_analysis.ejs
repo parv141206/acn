@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/css/globals.css" />
   </head>
-  <body>
+  <body class="flex center flex-col">
     <%- include('navbar') %>
     <div id="main-body">
       <form id="packet-header-input-form">
@@ -26,6 +26,9 @@
         <button type="submit" class="button">Submit</button>
       </form>
     </div>
+    <script type="module" src="/lib/home.js"></script>
+    <script type="module" src="/lib/booleanAlgebra.js"></script>
     <script type="module" src="/lib/packet.js"></script>
+    <script type="module" src="/lib/validateIp.js"></script>
   </body>
 </html>
